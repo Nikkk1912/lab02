@@ -4,14 +4,17 @@ using namespace std;
 
 int main()
 {
-  int l = 70;
-  
-   for(int i = 0; i <= 6; i++){
-        for(int j = 0; j <= i; j++){
-       std::cout << (char)l;
-       l = l - 1;
+    int l = 70;
+
+    for (int i = 0; i < 6; i++) {
+        l = 70;
+        for (int j = 0; j <= i; j++) 
+        {
+            
+            std::cout << (char)l;
+            l = l - 1;
         }
         std::cout << std::endl;
-   }
-   
+    }
+
 }
