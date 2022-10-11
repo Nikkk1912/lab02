@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -16,16 +17,24 @@ int main()
 {
     int a, b;
 
-    cout << "Enter lower limit: ";
-    cin >> b;
-    cout << "Enter upper limit: ";
-    cin >> a;
     
+        cout << "Enter lower limit: ";
+        cin >> b;
+     
+        cout << "Enter upper limit: ";
+        cin >> a;
 
+        while (cin.good()) {
 
-        for (b; b <= a; b++) {
-            square(b);
+            for (b; b <= a; b++) {
+                square(b);
+                
+            }
+            cout << "Enter lower limit: ";
+            cin >> b;
 
+            cout << "Enter upper limit: ";
+            cin >> a;
         }
     
 }
